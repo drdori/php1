@@ -1,7 +1,10 @@
 <?php
+include "classes\Page.php";
 include "classes\hirek.php";
 include "classes\szponzoralt.php";
-echo "Friss hírek!";
+
+//echo "Friss hírek!";//statikus osztállyal iratjuk ki
+\classes\Page::PrintHeader(); //:: a hivatkozás az osztály eljárására, mert statikusan hoztam létre. -> hibát okoz
 $napihirek1 = new \classes\Hirek("Az első cikkem","tanulás");
 //return this nélkül
 //$napihirek1->setTartalom("Itt jeleneik eg az első cikkem tartalma...");

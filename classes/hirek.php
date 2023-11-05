@@ -48,8 +48,9 @@ public function HtmlEloNezet()
     $html.=('<p>'.$this->tartalom.'</p>');
     $html.=('<p>Címkék:'. implode(", ",$this->tags).'</p>');
     $html.='</div>';
+    print ("<hr>");
     return $html;
-    echo "<hr>";
+
 }
 
 
