@@ -1,8 +1,5 @@
 <?php
 
-namespace classes;
-
-use classes\Hirek;
 
 class szponzoralt extends Hirek
 {
